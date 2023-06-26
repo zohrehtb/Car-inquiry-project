@@ -1,0 +1,207 @@
+// -------------------------------------------------------------------------- //
+// Calculator
+// -------------------------------------------------------------------------- //
+.m-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+    }
+
+    &__box {
+        background-color: #fff;
+        padding: 15px 30px;
+        width: 992px;
+        max-width: 992px;
+        height: 70%;
+        min-height: 70%;
+        display: flex;
+        flex-flow: column;
+
+        @media only screen and (max-width: 768px) {
+            height: auto;
+        }
+    }
+
+    &__header {
+        margin-bottom: 10px;
+        align-items: center;
+
+        h1 {
+            font-weight: 600;
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        span {
+            color: #bbb;
+            font-size: 13px;
+        }
+    }
+
+    &__table {
+        flex: 1;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            flex-wrap: nowrap;
+            flex: 0;
+        }
+    }
+
+    &__aside {
+        width: 18%;
+        border-left: 1px solid #c7c7c7;
+        height: 100%;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            border-left: 0 !important;
+            border-bottom: 1px solid #c7c7c7;
+            margin-bottom: 20px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            color: #717171;
+            line-height: 37px;
+            padding-left: 20px;
+
+            @media only screen and (max-width: 768px) {
+                padding-left: 5px;
+            }
+
+            span {
+                color: #a0528f;
+                font-size: 17px;
+            }
+        }
+    }
+
+    &__filter {
+        display: flex;
+        flex-direction: column;
+        padding-left: 27px;
+
+        @media only screen and (max-width: 768px) {
+            padding-left: 5px;
+        }
+
+        &__item {
+            display: flex;
+            width: 100%;
+            background-color: #f2f2f1;
+            align-items: center;
+            justify-content: space-between;
+            color: #a5a5a5;
+            line-height: 31px;
+            font-weight: 400;
+            padding: 0 10px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        &__icon {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    }
+
+    &__products {
+        width: 82%;
+        padding-right: 20px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        &__header {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        &__inner {
+            column-count: 4;
+            @media only screen and (max-width: 768px) {
+                column-count: 2;
+            }
+        }
+
+        &__range-box {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__product {
+        a {
+            color: #8f9497;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            line-height: 38px;
+            display: inline-block;
+            padding: 0 10px;
+            margin-bottom: 7px;
+
+            &:hover {
+                border-color: #06bdb3;
+            }
+        }
+    }
+
+    &__sort-title {
+        line-height: 38px;
+        display: inline-block;
+        padding: 0 10px;
+        margin-bottom: 7px;
+        color: #2eb5a4;
+        font-size: 14px;
+        font-weight: 600;
+
+        svg {
+            font-size: 5px;
+            margin-left: 5px;
+        }
+    }
+
+    &__synapsis {
+        color: #717171;
+        font-size: 11px;
+        line-height: 25px;
+        font-weight: 400;
+        padding-right: 18%;
+
+        @media only screen and (max-width: 768px) {
+            padding-right: 0;
+        }
+    }
+
+    &__submit-button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+
+        button {
+            font-family: arial;
+            color: #ffffff !important;
+            font-size: 15px;
+            text-shadow: 1px 1px 0px #7cacde;
+            box-shadow: 0px 0px 1px #bee2f9;
+            padding: 10px 25px;
+            border-radius: 10px;
+            border: 0;
+            background: #06bdb3 !important;
+            background: linear-gradient(to top, #06bdb3, #06bdb3);
+            font-family: "Alexandria", sans-serif;
+        }
+    }
+}

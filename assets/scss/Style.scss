@@ -1,0 +1,16 @@
+// -------------------------------------------------------------------------- //
+// Style
+// -------------------------------------------------------------------------- //
+
+@import "./shared/main";
+
+// Layouts
+//------------------------------------------------
+@import "./pages/calculator";
+
+// Components
+//------------------------------------------------
+
+// Font
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;600&family=Noto+Kufi+Arabic:wght@300;400;700&display=swap');
